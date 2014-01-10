@@ -1,0 +1,10 @@
+<button class="refresh">Refresh</button>
+<h2><%= feed.escape("title") %></h2>
+<% console.log(feed.get("entries")) %>
+<ul>
+<% feed.get("entries").each (function(entry) { %>
+  <li><a href="#/feeds/<%= feed.id %>/entries/<%= entry.id %>">
+                                <%= entry.escape("title") %></a></li>
+<% }); %>
+</ul>
+

@@ -1,0 +1,10 @@
+<h1>Feeds</h1>
+<ul>
+  <% feeds.each(function(feed) { %>
+    <li><a href="#feeds/<%= feed.id %>"><%= feed.escape("title") %></a>
+    <button class="favorite" data-id="<%= feed.id %>" <% if (feed.get("has_favorited")) { %>
+      <%= "disabled" %>
+      <% } %>>Favorite</button>
+    </li>
+  <% }); %>
+</ul>
