@@ -1,12 +1,5 @@
-# Welcome to News Reader Demo
+# App Academy: Week 8 - Day 4
 
-* bundle install
-* rake db:migrate
-* rake db:seed
-
-Three feeds with their entries will be created upon running `rake
-db:seed`.
-
-Good luck. Have fun.
+- Backbone App
 
 
